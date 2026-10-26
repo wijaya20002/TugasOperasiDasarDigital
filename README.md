@@ -46,21 +46,7 @@ Visualisasi nilai absolut menunjukkan kekuatan gradien tanpa membedakan tanda po
 Hasil deteksi tepi dan gradien disimpan di folder `hasil/`. File foto asli tetap aman.
 <img width="419" height="64" alt="image" src="https://github.com/user-attachments/assets/c672e3f6-7e00-4af0-84b3-0812b66f8e2d" />
 
-## Instalasi
 
-Pastikan Python 3 sudah terpasang. Dari terminal pada folder proyek, jalankan:
-
-```bash
-python -m pip install jupyter ipykernel opencv-python numpy matplotlib pandas pillow
-```
-
-Buka folder ini di VS Code, buka salah satu file `.ipynb`, pilih kernel Python, lalu jalankan sel secara berurutan atau gunakan **Run All**.
-
-Alternatifnya, jalankan Jupyter Notebook dari terminal:
-
-```bash
-jupyter notebook
-```
 
 ## Notebook 1 — Gaussian Blur dan Median Filter
 
