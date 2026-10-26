@@ -8,6 +8,9 @@ Proyek ini berisi dua contoh operasi dasar pengolahan citra digital menggunakan 
 1. `Tugas_Gaussian_Median_Filter.ipynb` — perbandingan Gaussian Blur dan Median Filter.
 2. `Tugas_Deteksi_Tepi_Sobel.ipynb` — deteksi tepi menggunakan operator Sobel.
 
+## Tujuan
+Menerapkan operator Sobel untuk menonjolkan perubahan intensitas pada foto. Metode ini menghitung gradien pada arah X dan Y lalu menggabungkannya menjadi peta kekuatan tepi. Foto sumber tidak diubah.
+
 ## Struktur folder
 
 ```text
@@ -26,6 +29,10 @@ Proyek_Operasi_Dasar_Citra_Digital/
 ```
 
 Folder `hasil/` berisi contoh hasil yang dibuat dengan menjalankan operasi pada foto sumber. Jika notebook dijalankan kembali, file hasil dapat dibuat ulang.
+
+## 1. Membaca citra dan memeriksa data
+OpenCV membaca kanal warna dalam urutan BGR; untuk Matplotlib gambar dikonversi menjadi RGB.
+<img width="359" height="223" alt="image" src="https://github.com/user-attachments/assets/60f23778-37fe-412a-8dd9-c5e1d205ec3c" />
 
 ## Instalasi
 
