@@ -8,6 +8,9 @@ Proyek ini berisi dua contoh operasi dasar pengolahan citra digital menggunakan 
 1. `Tugas_Gaussian_Median_Filter.ipynb` — perbandingan Gaussian Blur dan Median Filter.
 2. `Tugas_Deteksi_Tepi_Sobel.ipynb` — deteksi tepi menggunakan operator Sobel.
 
+## Tujuan
+Menerapkan operator Sobel untuk menonjolkan perubahan intensitas pada foto. Metode ini menghitung gradien pada arah X dan Y lalu menggabungkannya menjadi peta kekuatan tepi. Foto sumber tidak diubah.
+
 ## Struktur folder
 
 ```text
@@ -26,6 +29,22 @@ Proyek_Operasi_Dasar_Citra_Digital/
 ```
 
 Folder `hasil/` berisi contoh hasil yang dibuat dengan menjalankan operasi pada foto sumber. Jika notebook dijalankan kembali, file hasil dapat dibuat ulang.
+
+## 1. Membaca citra dan memeriksa data
+OpenCV membaca kanal warna dalam urutan BGR; untuk Matplotlib gambar dikonversi menjadi RGB.
+<img width="359" height="223" alt="image" src="https://github.com/user-attachments/assets/60f23778-37fe-412a-8dd9-c5e1d205ec3c" />
+## 2. Menghitung gradien Sobel
+`Gx` menunjukkan perubahan intensitas pada arah X dan `Gy` pada arah Y. Magnitudo menggabungkan kedua arah tersebut. Data gradien dihitung dalam tipe float agar nilai negatif dan nilai di luar rentang 0–255 tidak terpotong sebelum perhitungan.
+<img width="263" height="73" alt="image" src="https://github.com/user-attachments/assets/211cb4aa-c2a4-4926-99b9-270ad3025ea8" />
+## 3. Visualisasi hasil
+Bagian terang pada peta Sobel menunjukkan perubahan intensitas yang kuat. Tekstur, tulisan, dan detail latar juga dapat muncul sebagai tepi.
+<img width="358" height="158" alt="image" src="https://github.com/user-attachments/assets/0922a5fd-e1f4-47b3-ba32-d3209d2ae7ef" />
+## 4. Analisis gradien X dan Y
+Visualisasi nilai absolut menunjukkan kekuatan gradien tanpa membedakan tanda positif dan negatif. Tabel berikut merangkum nilai gradien yang dihitung dari foto.
+<img width="368" height="314" alt="image" src="https://github.com/user-attachments/assets/0ffb57e2-6841-4e08-8f36-00184d224a92" />
+## 5. Menyimpan hasil
+Hasil deteksi tepi dan gradien disimpan di folder `hasil/`. File foto asli tetap aman.
+<img width="419" height="64" alt="image" src="https://github.com/user-attachments/assets/c672e3f6-7e00-4af0-84b3-0812b66f8e2d" />
 
 ## Instalasi
 
